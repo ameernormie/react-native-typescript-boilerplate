@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react-native",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "es2015",
+    "typeRoots": ["node_modules/types", "custom_typings"],
+    "types": ["react", "react-native", "jest", "node"],
+    "lib": ["es7"]
+  },
+  "exclude": ["android", "index.ts", "ios", "build", "node_modules"],
+  "types": ["react", "react-native", "jest", "node"],
+  "compileOnSave": false,
+  "include": ["App"]
+}
