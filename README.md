@@ -4,7 +4,7 @@
 
 Table of Content
 
-- [Change Name of Project](#change-name-of-project)
+- [Change Name of the Project](#change-name-of-the-project)
 - [Setting Up](#setting-up)
 - [Features Provided](#features-provided)
 - [How to Make Api Calls](#how-to-make-api-calls)
