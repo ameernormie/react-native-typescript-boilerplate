@@ -21,7 +21,7 @@ Table of Content
 
 Rename the project name to the appropriate name that you want for the project. The best way to do that is to install the package [react-native-rename](https://github.com/junedomingo/react-native-rename)
 
-Follow the steps for the package to rename the project
+Follow the steps from the documentation of [react-native-rename](https://github.com/junedomingo/react-native-rename) to rename the project properly
 
 ## Setting Up
 
