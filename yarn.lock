@@ -1271,6 +1271,11 @@
   resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.18.tgz#a80f02b046edd5ff777e863732591bd50c53236e"
   integrity sha512-wK3NLaAkL/ht7Nw4IZsOagJuYqzZgoboFvILolOPtmoKyy25gTdz/uvB/bXsv6vdWENYv+ml5ph873P2d/+9HA==
 
+"@types/react-native-keychain@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native-keychain/-/react-native-keychain-3.0.0.tgz#2369617a8e5b3b0893b22909ca392a4a13e36885"
+  integrity sha512-EefmNT2SNvKPaem+MeIJg0zJczx1/PD+UVFvCwyNX39LgZZttXMducggeD7yLE+kuzfbsgqm5KPryORHzD/AUQ==
+
 "@types/react-native@^0.60.2":
   version "0.60.2"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.2.tgz#2dca78481a904419c2a5907288dd97d1090c6e3c"
