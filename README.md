@@ -63,7 +63,7 @@ export function* startup(api) {
 }
 ```
 
-**Now Make The api call**
+`Now Make The api call`
 
 ```
 export function* startup(api) {
