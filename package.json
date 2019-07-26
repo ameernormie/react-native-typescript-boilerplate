@@ -70,6 +70,7 @@
     "tslint-config-standard": "^8.0.1",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.2.1",
     "tslint-react-recommended": "^1.0.15",
     "typescript": "^3.5.3"
   },

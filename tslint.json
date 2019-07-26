@@ -4,7 +4,8 @@
     "tslint:recommended",
     "tslint-config-standard",
     "tslint-react",
-    "tslint-config-prettier"
+    "tslint-config-prettier",
+    "tslint-react-hooks"
   ],
   "rules": {
     "align": [true, "parameters", "statements"],
@@ -27,6 +28,7 @@
       "variables-before-functions",
       "public-before-private"
     ],
+    "react-hooks-nesting": "error",
     "no-any": false,
     "no-arg": true,
     "no-bitwise": true,
