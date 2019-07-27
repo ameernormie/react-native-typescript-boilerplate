@@ -1,35 +1,43 @@
-import React, { Component } from 'react';
-import { ScrollView, Text, Image, View } from 'react-native';
-
-import { Images } from '../Themes';
+import React, { useState } from 'react';
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 // Styles
-import styles from './Styles/LaunchScreenStyles';
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 15,
+    color: '#000',
+  },
+  button: {
+    height: 30,
+    borderWidth: 1,
+    borderColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    marginTop: 15,
+    borderRadius: 5,
+  },
+});
 
-export default class SecondScreen extends Component {
-  render() {
-    return (
-      <View style={styles.mainContainer}>
-        <Image
-          source={Images.background}
-          style={styles.backgroundImage}
-          resizeMode='stretch'
-        />
-        <ScrollView style={styles.container}>
-          <View style={styles.centered}>
-            <Image source={Images.launch} style={styles.logo} />
-          </View>
+function SecondScreen(props) {
+  const [count, setCount] = useState(0);
 
-          <View style={styles.section}>
-            <Image source={Images.ready} />
-            <Text style={styles.sectionText}>
-              , in that case, congrats! You're ready to ship. For everyone else,
-              this is where you'll see a live preview of your fully functioning
-              app using Ignite.
-            </Text>
-          </View>
-        </ScrollView>
-      </View>
-    );
-  }
+  return (
+    <View style={styles.container}>
+      <Text>You clicked {count} times</Text>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => setCount(count + 1)}
+      >
+        <Text style={styles.text}>Increment</Text>
+      </TouchableOpacity>
+    </View>
+  );
 }
+
+export default SecondScreen;

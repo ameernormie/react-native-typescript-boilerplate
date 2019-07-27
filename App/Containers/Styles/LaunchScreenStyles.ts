@@ -15,4 +15,15 @@ export default StyleSheet.create({
   centered: {
     alignItems: 'center',
   },
+  button: {
+    height: 30,
+    borderWidth: 1,
+    borderColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    marginTop: 15,
+    borderRadius: 5,
+    marginHorizontal: 50,
+  },
 });
