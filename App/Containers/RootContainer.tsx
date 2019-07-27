@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { View, StatusBar } from 'react-native';
 import ReduxNavigation from '../Navigation/ReduxNavigation';
 import { connect } from 'react-redux';
@@ -11,19 +11,17 @@ interface IRootContainerProps {
   startup: () => void;
 }
 
-class RootContainer extends Component<IRootContainerProps, {}> {
-  componentDidMount() {
-    this.props.startup();
-  }
+function RootContainer(props: IRootContainerProps) {
+  useEffect(() => {
+    props.startup();
+  });
 
-  render() {
-    return (
-      <View style={styles.applicationView}>
-        <StatusBar barStyle='light-content' />
-        <ReduxNavigation />
-      </View>
-    );
-  }
+  return (
+    <View style={styles.applicationView}>
+      <StatusBar barStyle='light-content' />
+      <ReduxNavigation />
+    </View>
+  );
 }
 
 // wraps dispatch to create nicer functions to call within our component
