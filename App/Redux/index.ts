@@ -7,6 +7,7 @@ import { persistReducer } from 'redux-persist';
 /* ------------- Assemble The Reducers ------------- */
 export const reducers = combineReducers({
   nav: require('./NavigationRedux').reducer,
+  app: require('./AppRedux').reducer,
 });
 
 export default () => {
