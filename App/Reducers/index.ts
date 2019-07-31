@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import configureStore from './CreateStore';
-import rootSaga from '../Sagas';
-import REDUX_PERSIST from '../Config/ReduxPersist';
+import configureStore from 'Reducers/CreateStore';
+import rootSaga from 'Sagas';
+import REDUX_PERSIST from 'Config/ReduxPersist';
 import { persistReducer } from 'redux-persist';
 
 /* ------------- Assemble The Reducers ------------- */

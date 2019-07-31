@@ -8,8 +8,8 @@ export function* startup(api) {
       method: 'GET',
       url: '/todos/1',
     });
-    console.log('api response ', apiResponse);
+    console.tron.log('api response ', apiResponse);
   } catch (error) {
-    console.log('error ', error);
+    console.tron.log('error ', error);
   }
 }

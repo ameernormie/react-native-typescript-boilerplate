@@ -1,9 +1,9 @@
-import ReduxPersist from '../Config/ReduxPersist';
+import ReduxPersist from 'Config/ReduxPersist';
 import AsyncStorage from '@react-native-community/async-storage';
 import { persistStore } from 'redux-persist';
-import { init } from '../Containers/App';
+import { init } from 'Containers/App';
 import noop from 'lodash/noop';
-import DebugConfig from '../Config/DebugConfig';
+import DebugConfig from 'Config/DebugConfig';
 
 const updateReducers = (store: Store) => {
   const reducerVersion = ReduxPersist.reducerVersion;

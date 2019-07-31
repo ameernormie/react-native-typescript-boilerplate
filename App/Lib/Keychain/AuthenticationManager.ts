@@ -1,5 +1,5 @@
 import { UserCredentials } from 'react-native-keychain';
-import KeychainManager from './KeychainManager';
+import KeychainManager from 'Lib/Keychain/KeychainManager';
 
 export const ALIAS_AUTHENTICATION = 'authentication_key';
 const USERNAME_AUTHENTICATION = 'authentication_username';

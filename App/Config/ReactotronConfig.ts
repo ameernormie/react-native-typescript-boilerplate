@@ -1,4 +1,4 @@
-import Config from './DebugConfig';
+import Config from 'Config/DebugConfig';
 import Immutable from 'seamless-immutable';
 import Reactotron from 'reactotron-react-native';
 import { reactotronRedux as reduxPlugin } from 'reactotron-redux';

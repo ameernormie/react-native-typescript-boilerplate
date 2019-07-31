@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import Config from '../Config/DebugConfig';
+import Config from 'Config/DebugConfig';
 import createSagaMiddleware from 'redux-saga';
-import ScreenTracking from './ScreenTrackingMiddleware';
-import { appNavigatorMiddleware } from '../Navigation/ReduxNavigation';
-import REDUX_PERSIST from '../Config/ReduxPersist';
-import Rehydration from '../Services/Rehydration';
+import ScreenTracking from 'Reducers/ScreenTrackingMiddleware';
+import { appNavigatorMiddleware } from 'Navigation/ReduxNavigation';
+import REDUX_PERSIST from 'Config/ReduxPersist';
+import Rehydration from 'Services/Rehydration';
 
 // creates the store
 export default (rootReducer, rootSaga) => {

@@ -4,7 +4,7 @@ import {
   IAppReduxActionTypes,
   IAppReduxActionCreators,
   IAppReduxState,
-} from '../Constants/Types';
+} from 'Constants/Types';
 
 const {
   Types,

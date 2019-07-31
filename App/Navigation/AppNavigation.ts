@@ -1,6 +1,6 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import LaunchScreen from '../Containers/LaunchScreen';
-import SecondScreen from '../Containers/SecondScreen';
+import LaunchScreen from 'Containers/LaunchScreen';
+import SecondScreen from 'Containers/SecondScreen';
 
 import styles from './Styles/NavigationStyles';
 

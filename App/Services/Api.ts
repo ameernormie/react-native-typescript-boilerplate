@@ -1,10 +1,10 @@
 import axios, { AxiosPromise, AxiosRequestConfig } from 'axios';
 // TODO put this url later
-import AppConfig from '../Config/AppConfig';
+import AppConfig from 'Config/AppConfig';
 import assign from 'lodash/assign';
 import isNull from 'lodash/isNull';
 import { UserCredentials } from 'react-native-keychain';
-import AuthenticationManager from '../Lib/Keychain/AuthenticationManager';
+import AuthenticationManager from 'Lib/Keychain/AuthenticationManager';
 
 /**
  * Assigns headers (Authorization) to axios config

@@ -1,10 +1,10 @@
-import '../Config';
-import DebugConfig from '../Config/DebugConfig';
+import 'Config';
+import DebugConfig from 'Config/DebugConfig';
 import React from 'react';
 import { Provider } from 'react-redux';
-import RootContainer from './RootContainer';
-import createStore from '../Redux';
-import StartupActions from '../Redux/StartupRedux';
+import RootContainer from 'Containers/RootContainer';
+import createStore from 'Reducers';
+import StartupActions from 'Reducers/StartupRedux';
 
 // create our store
 const store = createStore();

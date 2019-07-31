@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { BackHandler, Platform, Text } from 'react-native';
+import { BackHandler, Platform } from 'react-native';
 import {
   createReactNavigationReduxMiddleware,
   createReduxContainer,
 } from 'react-navigation-redux-helpers';
 import { connect } from 'react-redux';
-import AppNavigation from './AppNavigation';
+import AppNavigation from 'Navigation/AppNavigation';
 
 export const appNavigatorMiddleware = createReactNavigationReduxMiddleware(
   (state) => state.nav,

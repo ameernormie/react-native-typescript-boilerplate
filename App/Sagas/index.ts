@@ -1,13 +1,13 @@
 import { takeLatest, all } from 'redux-saga/effects';
-import Api from '../Services/Api';
+import Api from 'Services/Api';
 
 /* ------------- Types ------------- */
 
-import { StartupTypes } from '../Redux/StartupRedux';
+import { StartupTypes } from 'Reducers/StartupRedux';
 
 /* ------------- Sagas ------------- */
 
-import { startup } from './StartupSagas';
+import { startup } from 'Sagas/StartupSagas';
 
 /* ------------- API ------------- */
 
