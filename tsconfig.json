@@ -15,7 +15,11 @@
     "target": "es2015",
     "typeRoots": ["node_modules/types", "custom_typings"],
     "types": ["react", "react-native", "jest", "node"],
-    "lib": ["es7"]
+    "lib": ["es7"],
+    "baseUrl": ".",
+    "paths": {
+      "*": ["App/*"]
+    }
   },
   "exclude": ["android", "index.ts", "ios", "build", "node_modules"],
   "types": ["react", "react-native", "jest", "node"],

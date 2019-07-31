@@ -5,13 +5,13 @@ module.exports = {
       plugins: ['ignite-ignore-reactotron'],
     },
   },
-  // plugins: [
-  //   [
-  //     'module-resolver',
-  //     {
-  //       root: ['.', 'App'],
-  //       extensions: ['.ts', '.tsx', '.js', '.json', '.ios.tsx', '.android.tsx'],
-  //     },
-  //   ],
-  // ],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['.', 'App'],
+        extensions: ['.ts', '.tsx', '.js', '.json', '.ios.tsx', '.android.tsx'],
+      },
+    ],
+  ],
 };
