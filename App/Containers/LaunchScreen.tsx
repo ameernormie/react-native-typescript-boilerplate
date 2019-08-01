@@ -3,7 +3,7 @@ import { ScrollView, Text, Image, View, TouchableOpacity } from 'react-native';
 import { Images } from 'Themes';
 
 // Styles
-import styles from './Styles/LaunchScreenStyles';
+import styles from 'Containers/Styles/LaunchScreenStyles';
 
 const LaunchScreen = (props) => {
   return (

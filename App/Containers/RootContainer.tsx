@@ -7,7 +7,7 @@ import AppActions from 'Reducers/AppRedux';
 import NetInfo, { NetInfoState } from '@react-native-community/netinfo';
 
 // Styles
-import styles from './Styles/RootContainerStyles';
+import styles from 'Containers/Styles/RootContainerStyles';
 
 interface IRootContainerProps {
   startup: () => void;

@@ -6,8 +6,8 @@ import { persistReducer } from 'redux-persist';
 
 /* ------------- Assemble The Reducers ------------- */
 export const reducers = combineReducers({
-  nav: require('./NavigationRedux').reducer,
-  app: require('./AppRedux').reducer,
+  nav: require('Reducers/NavigationRedux').reducer,
+  app: require('Reducers/AppRedux').reducer,
 });
 
 export default () => {
@@ -29,7 +29,7 @@ export default () => {
       const nextRootReducer = require('.').reducers;
       store.replaceReducer(nextRootReducer);
 
-      const newYieldedSagas = require('../Sagas').default;
+      const newYieldedSagas = require('Sagas').default;
       sagasManager.cancel();
       sagasManager.done.then(() => {
         sagasManager = sagaMiddleware(newYieldedSagas);

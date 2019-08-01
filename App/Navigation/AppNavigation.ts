@@ -2,7 +2,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import LaunchScreen from 'Containers/LaunchScreen';
 import SecondScreen from 'Containers/SecondScreen';
 
-import styles from './Styles/NavigationStyles';
+import styles from 'Navigation/Styles/NavigationStyles';
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator(
