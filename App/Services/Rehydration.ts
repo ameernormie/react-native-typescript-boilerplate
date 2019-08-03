@@ -4,6 +4,7 @@ import { persistStore } from 'redux-persist';
 import { init } from 'Containers/App';
 import noop from 'lodash/noop';
 import DebugConfig from 'Config/DebugConfig';
+import { Store } from 'redux';
 
 const updateReducers = (store: Store) => {
   const reducerVersion = ReduxPersist.reducerVersion;

@@ -33,6 +33,7 @@ export const init = (store) => {
  * We separate like this to play nice with React Native's hot reloading.
  */
 const App = (props) => {
+  console.tron.log('in app ', store);
   return (
     <Provider store={store}>
       <RootContainer />

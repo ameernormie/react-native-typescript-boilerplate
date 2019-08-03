@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { AppState, AppStateStatus, View, StatusBar } from 'react-native';
 import ReduxNavigation from 'Navigation/ReduxNavigation';
 import { connect } from 'react-redux';
-import StartupActions from 'Reducers/StartupRedux';
 import AppActions from 'Reducers/AppRedux';
 import NetInfo, { NetInfoState } from '@react-native-community/netinfo';
 
@@ -10,15 +9,12 @@ import NetInfo, { NetInfoState } from '@react-native-community/netinfo';
 import styles from 'Containers/Styles/RootContainerStyles';
 
 interface IRootContainerProps {
-  startup: () => void;
   changeConnection: (isConnected: boolean) => void;
   setAppState: (appState: AppStateStatus) => void;
 }
 
 function RootContainer(props: IRootContainerProps) {
   useEffect(() => {
-    props.startup();
-
     /** Listen to the connection change and update it in App redux */
     const unsubscribeNetInfo = NetInfo.addEventListener(
       (state: NetInfoState) => {
@@ -59,7 +55,6 @@ function RootContainer(props: IRootContainerProps) {
 
 // wraps dispatch to create nicer functions to call within our component
 const mapDispatchToProps = (dispatch) => ({
-  startup: () => dispatch(StartupActions.startup()),
   changeConnection: (isConnected) =>
     dispatch(AppActions.changeConnection(isConnected)),
   setAppState: (appState: AppStateStatus) =>
