@@ -19,6 +19,12 @@ const LaunchScreen = (props) => {
         >
           <Text>Navigate</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => props.navigation.navigate('TabNav')}
+          style={styles.button}
+        >
+          <Text>Tab Navigation</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
