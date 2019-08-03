@@ -1,7 +1,6 @@
 const colors = {
   background: '#1F0808',
   clear: 'rgba(0,0,0,0)',
-  facebook: '#3b5998',
   transparent: 'rgba(0,0,0,0)',
   silver: '#F7F7F7',
   steel: '#CCCCCC',
@@ -22,6 +21,16 @@ const colors = {
   border: '#483F53',
   banner: '#5F3E63',
   text: '#E0D7E5',
+  tabViewBg: 'rgba(248,248,248,0.92)',
+  green: 'rgb(125,186,73)',
+  tabViewBorder: 'rgba(0,0,0,0.3)',
+  headerBg: 'rgba(248,248,248,0.92)',
+  black: 'rgb(0,0,0)',
+  facebookBlue: '#4D71A8',
+  lightGray: '#C8C7CC',
+  lightSkyBlue: '#F2F9FE',
+  facebook: 'rgb(78,133,168)',
+  dimmedText: 'rgb(162,161,161)',
 };
 
 export default colors;
