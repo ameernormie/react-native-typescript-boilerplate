@@ -40,6 +40,20 @@ const headerDefaultConfig = {
     fontSize: 17,
     lineHeight: 22,
   },
+  /** Default header left for stacks */
+  // headerLeft: (navigation) => {
+  //   /** If it's the first screen of the stack, don't show the back button */
+  //   if (navigation.scene.index === 0) return null;
+  //   return (
+  //     <TouchableOpacity
+  //       onPress={navigation.onPress}
+  //       style={styles.backButtonContainer}
+  //     >
+  //       <Icon name='arrow-left' color={Colors.button} size={20} />
+  //       <Text style={styles.backText}>Back</Text>
+  //     </TouchableOpacity>
+  //   );
+  // },
   headerTintColor: Colors.transparent,
   gesturesEnabled: false,
 };
