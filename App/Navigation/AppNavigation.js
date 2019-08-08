@@ -74,35 +74,35 @@ const BottomTabApp = createBottomTabNavigator(
       screen: HomeNav,
       params: {
         label: 'Dashboard',
-        iconName: 'dashboard',
+        iconName: 'eye-open',
       },
     },
     CGMSNav: {
       screen: HomeNav,
       params: {
         label: 'Reports',
-        iconName: 'reports',
+        iconName: 'eye-open',
       },
     },
     AppointmentNav: {
       screen: HomeNav,
       params: {
         label: 'Appointments',
-        iconName: 'appointments',
+        iconName: 'eye-open',
       },
     },
     ELearningNav: {
       screen: HomeNav,
       params: {
         label: 'E-Learning',
-        iconName: 'elearning',
+        iconName: 'eye-open',
       },
     },
     MoreNav: {
       screen: HomeNav,
       params: {
         label: 'More',
-        iconName: 'dots',
+        iconName: 'eye-open',
       },
     },
   },

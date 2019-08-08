@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, TouchableWithoutFeedback, Text } from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 import { Colors } from 'Themes';
-// import Icon from 'Themes/Icon';
+import Icon from 'Themes/Icon';
 import { NavigationState, NavigationScreenProp } from 'react-navigation';
 
 const styles = StyleSheet.create({
@@ -62,11 +62,11 @@ function TabItem(props) {
   return (
     <TouchableWithoutFeedback onPress={handlePress}>
       <View style={{ flex: 1, alignItems: 'center' }}>
-        {/* <Icon
+        <Icon
           name={params.iconName}
           size={16}
           color={isActive ? Colors.green : Colors.text}
-        /> */}
+        />
         <Text
           style={[
             styles.label,
