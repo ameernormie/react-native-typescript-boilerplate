@@ -31,6 +31,11 @@ const colors = {
   lightSkyBlue: '#F2F9FE',
   facebook: 'rgb(78,133,168)',
   dimmedText: 'rgb(162,161,161)',
+  screenBg: '#F2F2F2',
+  blue: 'rgb(0,122,255)',
+  fieldActiveBorder: 'rgb(55,174,229)',
+  fieldErrorBorder: 'rgb(246,62,62)',
+  inputIconColor: 'rgb(187,187,187)',
 };
 
 export default colors;

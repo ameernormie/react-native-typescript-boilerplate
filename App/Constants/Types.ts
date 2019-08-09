@@ -37,3 +37,21 @@ export interface IAppReduxActionCreators {
   changeConnection: (isConnected: boolean) => void;
   setAppState: (appState: AppStateStatus) => void;
 }
+
+/**
+ * App form values interface
+ */
+export interface IAppFormValues {
+  name: string;
+  email: string;
+  password: string;
+  confirmPassword: string;
+}
+
+/**
+ * Enum type for input field type
+ */
+export enum FieldType {
+  text = 'text',
+  password = 'password',
+}
