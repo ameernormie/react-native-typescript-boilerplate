@@ -37,4 +37,15 @@ export default class AuthenticationManager extends KeychainManager {
   set(token: string): Promise<void> {
     return super.set(USERNAME_AUTHENTICATION, token);
   }
+
+  /**
+   * Removes authentication key from keychain
+   *
+   * @method remove
+   *
+   * @returns {Promise<void>}
+   */
+  remove(): Promise<void> {
+    return super.clear();
+  }
 }
