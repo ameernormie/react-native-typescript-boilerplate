@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { TextInput, StyleSheet, View, TouchableOpacity } from 'react-native';
-import { Colors, Fonts } from 'Themes';
+import { Colors } from 'Themes';
 import { FormikProps } from 'formik';
-import { IAppFormValues, FieldType } from 'Constants/Types';
+import { IAppFormValues, FieldType } from 'Types';
 import Icon from 'Themes/Icon';
 
 interface ITextInputProps extends FormikProps<IAppFormValues> {
@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 5,
     paddingHorizontal: 8,
-    fontFamily: Fonts.type.regular,
     letterSpacing: 0.35,
   },
   inputIcon: { marginRight: 10 },
