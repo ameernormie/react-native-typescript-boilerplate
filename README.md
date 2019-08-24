@@ -97,3 +97,28 @@ api({
     // error call back
 })
 ```
+
+## React
+
+React version `16.8.6` and React Native version `0.60.4` is used.
+**React hooks are followed in the project.**
+
+## Project Structure
+
+**Top Level Directory Layout**
+
+```javascript
+.
+|----     __tests__               Tests written for the app
+|----     android                 Android directory (android configs)
+|----     App                     Contains App code (Containers, Components ...)
+|----     Asests                  Contains Fonts to be linked for the project
+|----     custom_typings          Custom typings for the packages without types
+|----     ios                     Ios directory (ios setup)
+|----     .prettierrc             Contains prettier config for formatting
+|----     commitlint.config.js    Contains conventional commit config
+|----     index.ts                Starting point of the app
+|----     react-native.config.js  https://github.com/react-native-community/cli/blob/master/docs/configuration.md#migration-guide)
+|----     tsconfig.json           typescript config
+|----     tslint.json             ts linting rules
+```
