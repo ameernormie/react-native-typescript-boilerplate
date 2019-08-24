@@ -3,7 +3,7 @@ import Api from 'Services/Api';
 
 /* ------------- Types ------------- */
 
-import { StartupTypes } from 'Reducers/StartupRedux';
+import { StartupTypes } from 'Reducers/Startup';
 
 /* ------------- Sagas ------------- */
 

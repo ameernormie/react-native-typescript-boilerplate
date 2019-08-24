@@ -1,5 +1,5 @@
 import { createActions } from 'reduxsauce';
-import { IStartupActionCreators, IStartupActionTypes } from 'Constants/Types';
+import { IStartupActionCreators, IStartupActionTypes } from 'Reducers/Types';
 
 /* ------------- Types and Action Creators ------------- */
 

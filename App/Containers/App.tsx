@@ -4,13 +4,12 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import RootContainer from 'Containers/RootContainer';
 import createStore from 'Reducers';
-import StartupActions from 'Reducers/StartupRedux';
+import StartupActions from 'Reducers/Startup';
 
 // create our store
 const store = createStore();
 
 /**
- * Initialises realm database and triggers start up redux action
  * Note: This function should be called after redux-persist rehydration is complete
  *
  * See Services/Rehydration

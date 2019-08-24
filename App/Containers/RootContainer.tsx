@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { AppState, AppStateStatus, View, StatusBar } from 'react-native';
 import ReduxNavigation from 'Navigation/ReduxNavigation';
 import { connect } from 'react-redux';
-import StartupActions from 'Reducers/StartupRedux';
-import AppActions from 'Reducers/AppRedux';
+import StartupActions from 'Reducers/Startup';
+import AppActions from 'Reducers/App';
 import NetInfo, { NetInfoState } from '@react-native-community/netinfo';
 
 // Styles
