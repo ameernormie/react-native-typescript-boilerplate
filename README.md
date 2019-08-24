@@ -8,12 +8,12 @@ Table of Content
 - [Setting Up](#setting-up)
 - [Features Provided](#features-provided)
 - [How to Make Api Calls](#how-to-make-api-calls)
+- [Project Structure](#project-structure)
 - [React](#react)
 - [Testing](#testing)
 - [Documentation](#documentation)
 - [Storage](#storage)
 - [Debugging](#debugging)
-- [Project Structure](#project-structure)
 - [Navigation](#navigation)
 - [Data Transformations](#data-transformations)
 
