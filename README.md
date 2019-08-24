@@ -7,15 +7,14 @@ Table of Content
 - [Change Name of the Project](#change-name-of-the-project)
 - [Setting Up](#setting-up)
 - [Features Provided](#features-provided)
-- [How to Make Api Calls](#how-to-make-api-calls)
 - [Project Structure](#project-structure)
+- [How to Make Api Calls](#how-to-make-api-calls)
 - [React](#react)
-- [Testing](#testing)
-- [Documentation](#documentation)
-- [Storage](#storage)
-- [Debugging](#debugging)
-- [Navigation](#navigation)
-- [Data Transformations](#data-transformations)
+  <!-- - [Testing](#testing) -->
+  <!-- - [Debugging](#debugging) -->
+  <!-- - [Documentation](#documentation) -->
+  <!-- - [Navigation](#navigation) -->
+  <!-- - [Storage](#storage) -->
 
 ## Change name of the project
 
@@ -40,6 +39,26 @@ Follow the steps from the documentation of [react-native-rename](https://github.
 5. State managed through [redux-saga](https://github.com/redux-saga/redux-saga)
 6. [Reactotron](https://github.com/infinitered/reactotron) configured for debugging. Download the reactotron app from [here](https://github.com/infinitered/reactotron/releases).
    **Reactotron will automatically start logging once you build your app on IOS or Android.**
+
+## Project Structure
+
+**Top Level Directory Layout**
+
+```javascript
+.
+|----     __tests__               Tests written for the app
+|----     android                 Android directory (android configs)
+|----     App                     Contains App code (Containers, Components ...)
+|----     Asests                  Contains Fonts to be linked for the project
+|----     custom_typings          Custom typings for the packages without types
+|----     ios                     Ios directory (ios setup)
+|----     .prettierrc             Contains prettier config for formatting
+|----     commitlint.config.js    Contains conventional commit config
+|----     index.ts                Starting point of the app
+|----     react-native.config.js  https://github.com/react-native-community/cli/blob/master/docs/configuration.md#migration-guide)
+|----     tsconfig.json           typescript config
+|----     tslint.json             ts linting rules
+```
 
 ## How To Make Api Calls
 
@@ -102,23 +121,3 @@ api({
 
 React version `16.8.6` and React Native version `0.60.4` is used.
 **React hooks are followed in the project.**
-
-## Project Structure
-
-**Top Level Directory Layout**
-
-```javascript
-.
-|----     __tests__               Tests written for the app
-|----     android                 Android directory (android configs)
-|----     App                     Contains App code (Containers, Components ...)
-|----     Asests                  Contains Fonts to be linked for the project
-|----     custom_typings          Custom typings for the packages without types
-|----     ios                     Ios directory (ios setup)
-|----     .prettierrc             Contains prettier config for formatting
-|----     commitlint.config.js    Contains conventional commit config
-|----     index.ts                Starting point of the app
-|----     react-native.config.js  https://github.com/react-native-community/cli/blob/master/docs/configuration.md#migration-guide)
-|----     tsconfig.json           typescript config
-|----     tslint.json             ts linting rules
-```
