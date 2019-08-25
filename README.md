@@ -44,7 +44,7 @@ Follow the steps from the documentation of [react-native-rename](https://github.
 
 **Top Level Directory Layout**
 
-```javascript
+```
 .
 |----     __tests__               Tests written for the app
 |----     android                 Android directory (android configs)
@@ -58,6 +58,24 @@ Follow the steps from the documentation of [react-native-rename](https://github.
 |----     react-native.config.js  https://github.com/react-native-community/cli/blob/master/docs/configuration.md#migration-guide)
 |----     tsconfig.json           typescript config
 |----     tslint.json             ts linting rules
+```
+
+**App Directory**
+
+```
+.
+|----     Components                Common Components to be used in the app
+|----     Config                    Config files
+|----     Constants                 Constants to be used throughout the app
+|----     Containers                Contains components for the screens
+|----     Images                    Contains Image assets
+|----     Lib                       Contains utils for the app
+|----     Navigation                Contains React Navigation code for screens
+|----     Reducers                  Reducers for the app
+|----     Sagas                     Sagas for the reducers
+|----     Services                  Services used for the app
+|----     Themes                    Contains design UI related things
+|----     Types                     Contains global types
 ```
 
 ## How To Make Api Calls
