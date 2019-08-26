@@ -10,11 +10,6 @@ Table of Content
 - [Project Structure](#project-structure)
 - [How to Make Api Calls](#how-to-make-api-calls)
 - [React](#react)
-  <!-- - [Testing](#testing) -->
-  <!-- - [Debugging](#debugging) -->
-  <!-- - [Documentation](#documentation) -->
-  <!-- - [Navigation](#navigation) -->
-  <!-- - [Storage](#storage) -->
 
 ## Change name of the project
 
