@@ -23,7 +23,8 @@ Follow the steps from the documentation of [react-native-rename](https://github.
 2. Move into the project directory.
 3. Run `yarn install` or `npm install` to install the dependencies.
 4. Install pods using `cd ios/ && pod install && cd ..`
-5. Run project using `react-native run-ios`
+5. **For IOS** Run project using `react-native run-ios`
+6. **For Android** Run project using `react-native run-android`
 
 ## Features Provided
 
