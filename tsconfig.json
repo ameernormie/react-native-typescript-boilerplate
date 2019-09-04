@@ -21,7 +21,7 @@
       "*": ["App/*"]
     }
   },
-  "exclude": ["android", "index.ts", "ios", "build", "node_modules"],
+  "exclude": ["android", "index.js", "ios", "build", "node_modules"],
   "types": ["react", "react-native", "jest", "node"],
   "compileOnSave": false,
   "include": ["App"]
