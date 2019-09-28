@@ -3,6 +3,7 @@ import Immutable from 'seamless-immutable';
 import Reactotron from 'reactotron-react-native';
 import { reactotronRedux as reduxPlugin } from 'reactotron-redux';
 import sagaPlugin from 'reactotron-redux-saga';
+import { NativeModules } from 'react-native';
 
 declare global {
   /* tslint:disable:interface-name */
@@ -15,11 +16,13 @@ declare global {
 if (Config.useReactotron) {
   // https://github.com/infinitered/reactotron for more options!
 
-  // const scriptHostname = NativeModules.SourceCode.scriptURL
-  //   .split('://')[1]
-  //   .split(':')[0];
+  let scriptHostname;
+  if (__DEV__) {
+    const scriptURL = NativeModules.SourceCode.scriptURL;
+    scriptHostname = scriptURL.split('://')[1].split(':')[0];
+  }
   // https://github.com/infinitered/reactotron for more options!
-  Reactotron.configure({ name: 'App' })
+  Reactotron.configure({ name: 'App', host: scriptHostname })
     .useReactNative({
       errors: true,
       editor: true,
