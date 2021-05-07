@@ -20,7 +20,7 @@
     "@types/react-native-keychain": "^3.0.0",
     "axios": "^0.21.1",
     "formik": "^1.5.8",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ramda": "^0.26.1",
     "react": "16.8.6",
     "react-native": "0.60.4",
